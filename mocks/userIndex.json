@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "title": "main/user_title",
+  "content": "main/welcome",
+  "account": {
+    "type": "text",
+    "title": "account/account",
+    "value": "a11"
+  },
+  "balance": {
+    "real": {
+      "type": "money",
+      "title": "operation/purse_real",
+      "value": 2170.58
+    },
+    "bonus": {
+      "type": "money",
+      "title": "operation/purse_bonus",
+      "value": 507
+    },
+    "partner": {
+      "type": "money",
+      "title": "operation/purse_partner",
+      "value": 153
+    }
+  },
+  "forecast": {
+    "type": "date",
+    "title": "operation/forecast",
+    "value": false
+  }
+}

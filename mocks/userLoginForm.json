@@ -1,0 +1,11 @@
+{
+  "status":"form",
+  "title":"login\/title",
+  "model":"LoginForm",
+  "_csrf":"d3BmVi5lejk5RgoUGhFDZkEFMCd8FzwMGUckZGhcKEswHhUwQAYSaA==",
+  "fields":{
+    "email":{"type":"email","required":true,"title":"main\/email"},
+    "password":{"type":"password","required":true,"title":"main\/password"},
+    "rememberMe":{"type":"boolean","title":"login\/remember_me","value":0}
+  }
+}

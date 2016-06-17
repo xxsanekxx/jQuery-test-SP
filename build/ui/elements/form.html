@@ -1,0 +1,16 @@
+<form>
+    {{#each fields}}
+        {{#if bool}}
+            <div class="checkbox">
+                <label for="{{id}}"><input type="checkbox" id="{{id}}" name="{{name}}" value="{{value}}">{{title}}</label>
+            </div>
+        {{else}}
+            <div class="form-group">
+                <label for="{{id}}">{{title}}</label>
+                <input type="{{type}}" class="form-control" {{#if id }} id="{{id}}" {{/if}} required="{{required}}" name="{{name}}" value="{{value}}" placeholder="{{placeholder}}">
+            </div>
+        {{/if}}
+    {{/each}}
+    <input type="hidden" name="_csrf" value="{{_csrf}}">
+    <button class="btn btn-default center-block" type="submit">Войти</button>
+</form>

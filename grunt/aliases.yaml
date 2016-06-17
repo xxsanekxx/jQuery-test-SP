@@ -1,0 +1,15 @@
+release:
+  - 'concurrent:sass:release'
+  - 'concurrent:copy'
+  - 'concurrent:browserify'
+  - 'concurrent:uglify'
+
+default:
+  - 'dev'
+
+dev:
+ # - 'clean'
+  - 'concurrent:sass:debug'
+  - 'concurrent:browserify'
+  - 'concurrent:copy'
+  - 'watch'

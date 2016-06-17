@@ -1,0 +1,29 @@
+<div class="text-center">
+    <button class="btn btn-default" id="logoutBtn">Выход</button>
+    <h1>{{title}}</h1>
+    <h3>{{content}}</h3>
+</div>
+<div class="col-md-4">
+    <h3>{{account.title}}</h3>
+    <p>{{account.value}}</p>
+</div>
+{{#if balance}}
+    <div class="col-md-4">
+        <h3>Balance</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                {{balance.real.title}}: {{balance.real.value}}
+            </li>
+            <li class="list-group-item">
+                {{balance.bonus.title}}: {{balance.bonus.value}}
+            </li>
+            <li class="list-group-item">
+                {{balance.partner.title}}: {{balance.partner.value}}
+            </li>
+        </ul>
+    </div>
+{{/if}}
+<div class="col-md-4">
+    <h3>{{forecast.title}}</h3>
+    <p>{{#if forecast.value}} {{forecast.value}} {{else}} Unknown {{/if}}</p>
+</div>
